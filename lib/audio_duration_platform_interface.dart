@@ -23,11 +23,7 @@ abstract class AudioDurationPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<String?> getPlatformVersion() {
-    throw UnimplementedError('platformVersion() has not been implemented.');
-  }
-
-  Future<int?> getAudioDuration(String path) {
+  Future<Duration?> getAudioDuration(String path) {
     throw UnimplementedError('getAudioDuration() has not been implemented.');
   }
 }

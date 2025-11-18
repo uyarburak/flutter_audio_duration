@@ -10,17 +10,13 @@ class MethodChannelAudioDuration extends AudioDurationPlatform {
   final methodChannel = const MethodChannel('audio_duration');
 
   @override
-  Future<String?> getPlatformVersion() async {
-    final version =
-        await methodChannel.invokeMethod<String>('getPlatformVersion');
-    return version;
-  }
-
-  @override
-  Future<int?> getAudioDuration(String path) async {
+  Future<Duration?> getAudioDuration(String path) async {
     var duration = await methodChannel.invokeMethod<int>('getAudioDuration', {
       "path": path,
     });
-    return duration;
+    if (duration != null) {
+      return Duration(milliseconds: duration);
+    }
+    return null;
   }
 }

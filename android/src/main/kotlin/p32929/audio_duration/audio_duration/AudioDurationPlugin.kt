@@ -25,11 +25,7 @@ class AudioDurationPlugin: FlutterPlugin, MethodCallHandler {
   }
 
   override fun onMethodCall(call: MethodCall, result: Result) {
-    if (call.method == "getPlatformVersion") {
-      result.success("Android ${android.os.Build.VERSION.RELEASE}")
-    } 
-    
-    else if (call.method == "getAudioDuration") {
+    if (call.method == "getAudioDuration") {
       val args = call.arguments as? Map<*, *>
       val path = args?.get("path") as? String
 
