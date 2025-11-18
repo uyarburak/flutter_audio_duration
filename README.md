@@ -3,6 +3,7 @@
 Just a simple flutter package to get the duration of any audio file ( like: mp3 ) in milliseconds
 
 ## How to use
+
 ```
 import 'package:audio_duration/audio_duration.dart';
 //
@@ -11,14 +12,17 @@ var durationInMilliSeconds = await AudioDuration.getAudioDuration(filePathString
 ```
 
 ## Motivation
+
 I needed a package for a personal android app that can get the audio duration. But I couldn't find any package that can do it ( may be I haven't searched enough, who knows? )
 So, I created this package...
 
-For now, it only supports Android. I also dont have a Mac or an iOS device, so those are out of question for now :/ 
+The plugin currently supports **Android** and **iOS** for getting audio duration in milliseconds.  
+Support for other platforms (like macOS, Windows, Linux, and web) may be added in the future.
 
 But pull requests are welcome. But please do create an issue before making any pull requests. Thanks
 
 ## License
+
 ```
 MIT License
 

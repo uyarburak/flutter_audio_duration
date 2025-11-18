@@ -1,10 +1,16 @@
 ## 0.0.1
-* Initial release
-* Only supports Android
+
+- Initial release
+- Only supports Android
 
 ## 0.0.2
-* Made the function static
+
+- Made the function static
 
 ## 0.0.3
-* removed some platform codes
 
+- removed some platform codes
+
+## 0.0.4
+
+- add iOS support
